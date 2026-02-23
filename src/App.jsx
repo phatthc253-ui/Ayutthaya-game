@@ -105,17 +105,15 @@ export default function App() {
     buyPrice = Math.max(1, buyPrice);
     sellPrice = Math.max(2, sellPrice);
     
-      return (
-  <div className="min-h-screen bg-gradient-to-b from-amber-50 to-yellow-100 flex justify-center">
-      cost: item.buyPrice, 
-      currentBuyPrice: buyPrice, 
-      baseSellPrice: item.sellPrice, 
-      currentSellPrice: sellPrice + countryBonus, 
-      eventEffect,
-      countryBonus,
-      activeBuffEffect
-    };
-  };
+     return {
+  cost: item.buyPrice,
+  currentBuyPrice: buyPrice,
+  baseSellPrice: item.sellPrice,
+  currentSellPrice: sellPrice + countryBonus,
+  eventEffect,
+  countryBonus,
+  activeBuffEffect
+};
 
   const startLevel = () => {
     setIsTransitioning(true);
