@@ -149,8 +149,7 @@ export default function App() {
       setGameState('playing');
       setPopupMessage(null);
       setIsTransitioning(false);
-    }, 1500); // Transition duration
-  };
+  }, 1500);
 
   const nextCustomer = () => {
     const nextQueue = queue.slice(1);
