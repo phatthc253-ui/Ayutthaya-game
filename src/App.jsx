@@ -836,13 +836,34 @@ const PopupMessage = ({ message }) => (
 // Global Styles for Custom Animations
 const GlobalStyles = () => (
   <style>{`
-    @keyframes float { 0% { transform: translateY(0px); } 50% { transform: translateY(-15px); } 100% { transform: translateY(0px); } }
-    .animate-float { animation: float 6s ease-in-out infinite; }
-    
-    @keyframes idle { 0% { transform: translateY(0px); } 50% { transform: translateY(-6px); } 100% { transform: translateY(0px); } }
-    .animate-idle { animation: idle 2s ease-in-out infinite; }
-    
-    @keyframes sail-across { 0% { transform: translateX(-100vw) rotate(5deg); } 50% { transform: translateX(0) rotate(-2deg); } 100% { transform: translateX(100vw) rotate(5deg); } }
-    .animate-sail-across { animation: sail-across 1.5s ease-in-out forwards; }
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-15px); }
+      100% { transform: translateY(0px); }
+    }
+
+    .animate-float {
+      animation: float 6s ease-in-out infinite;
+    }
+
+    @keyframes idle {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-6px); }
+      100% { transform: translateY(0px); }
+    }
+
+    .animate-idle {
+      animation: idle 2s ease-in-out infinite;
+    }
+
+    @keyframes sail-across {
+      0% { transform: translateX(-100vw) rotate(5deg); }
+      50% { transform: translateX(0) rotate(-2deg); }
+      100% { transform: translateX(100vw) rotate(5deg); }
+    }
+
+    .animate-sail-across {
+      animation: sail-across 1.5s ease-in-out forwards;
+    }
   `}</style>
 );
