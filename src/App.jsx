@@ -4,13 +4,9 @@ import TopNav from "./components/TopNav"
 export default function App() {
   const [score, setScore] = useState(10)
 
-  return (
-    <div>
-      <TopNav score={score} />
-
-      <h1 style={{ textAlign: "center", marginTop: "50px" }}>
-        Ayutthaya Trade Adventure 🚢
-      </h1>
-    </div>
-  )
+ return (
+  <div style={{ minHeight: "100vh", width: "100vw" }}>
+    Hello
+  </div>
+);
 }
