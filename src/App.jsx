@@ -833,7 +833,6 @@ const PopupMessage = ({ message }) => (
   </div>
 );
 
-// Global Styles for Custom Animations
 const GlobalStyles = () => (
   <style>{`
     @keyframes float {
