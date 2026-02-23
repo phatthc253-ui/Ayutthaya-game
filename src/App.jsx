@@ -125,8 +125,10 @@ export default function App() {
       const randEvent = Math.random() < 0.4 ? EVENTS[Math.floor(Math.random() * (EVENTS.length - 1)) + 1] : EVENTS[0];
       setCurrentEvent(randEvent);
       setIsTransitioning(false);
-  }, 1000);
-    };
+  }, 500);
+};
+
+  const startTrading = () => {
       const numCustomers = Math.floor(Math.random() * 3) + 3;
       const newQueue = [];
       for (let i = 0; i < numCustomers; i++) {
